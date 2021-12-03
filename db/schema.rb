@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_02_225147) do
+ActiveRecord::Schema.define(version: 2021_12_02_235810) do
 
   create_table "genres", force: :cascade do |t|
     t.string "name"
@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 2021_12_02_225147) do
     t.string "title"
     t.string "director"
     t.string "year"
-    t.string "image"
     t.string "stars"
     t.string "review"
     t.datetime "created_at", precision: 6, null: false
