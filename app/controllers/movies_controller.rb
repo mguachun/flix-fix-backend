@@ -3,7 +3,7 @@ class MoviesController < ApplicationController
   def index
     movies = Movie.all
     render json: movies, 
-    except [:created_at, :updated_at]
+    except: [:created_at, :updated_at]
   end
 
   def show
@@ -18,6 +18,7 @@ class MoviesController < ApplicationController
       except: [:created_at, :updated_at]
     else
       render json: @movie.errors, status: :unprocessable_entity
+    end
   end
 
   def destroy
@@ -31,7 +32,7 @@ class MoviesController < ApplicationController
   end
 
   def movie_params
-    params.require(:movie).permit(:title, :director, :year, :image, :genre_id, :stars, :review)
+    params.require(:movie).permit(:title, :director, :year, :image, :genre, :stars, :review)
   end
 
 
