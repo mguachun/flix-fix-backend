@@ -1,24 +1,45 @@
-# README
+# FlixFix
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+FlixFix is a single page application that helps you track your movies. It allows you to log movies you've seen, filter them by genre, and view top rated movies for future viewing. 
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+To get started first, fork and clone this repo. Also fork and clone [the frontend rails api repo](https://github.com/mguachun/concert-client.git).
 
-* System dependencies
+And then execute:
 
-* Configuration
+    $ cd concert-api-backend
+    $ bundle install
 
-* Database creation
+To test run **rails s** in the console
 
-* Database initialization
+    $ rails s
+    => Booting Puma
+    => Rails 6.0.3.2 application starting in development
+    => Run `rails server --help` for more startup options
+    Puma starting in single mode...
+    Version 4.3.5 (ruby 2.6.1-p33), codename: Mysterious Traveller
+    Min threads: 5, max threads: 5
+    Environment: development
+    Listening on tcp://127.0.0.1:3001
+    Listening on tcp://[::1]:3001
+    Use Ctrl-C to stop
 
-* How to run the test suite
+This will run your rails api backend server.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Usage
 
-* Deployment instructions
+After starting your server use the homepage at [localhost:3001](http://localhost:3001) to navigate through the webpage and view the backend API in json.
 
-* ...
+Next open a separate terminal the execute:
+
+    $ cd concert-client
+    $ npm install
+    $ npm start
+
+This will open up the index html file and get your development environment started.
+
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/mguachun/concert-client.git. 
