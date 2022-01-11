@@ -21,15 +21,15 @@ To test run **rails s** in the console
     Version 4.3.5 (ruby 2.6.1-p33), codename: Mysterious Traveller
     Min threads: 5, max threads: 5
     Environment: development
-    Listening on tcp://127.0.0.1:3001
-    Listening on tcp://[::1]:3001
+    Listening on tcp://127.0.0.1:3000
+    Listening on tcp://:3000
     Use Ctrl-C to stop
 
 This will run your rails api backend server.
 
 ## Usage
 
-After starting your server use the homepage at [localhost:3001](http://localhost:3001) to navigate through the webpage and view the backend API in json.
+After starting your server use the homepage at http://localhost:3000/movies to navigate through the webpage and view the backend API in json.
 
 Next open a separate terminal the execute:
 
